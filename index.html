@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css ">
         <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css ">
         <title>Portfolio-Mokolo Digital solution</title>
         <!-- ajout du favicon -->
         <link rel="icon" type="image/x-icon" href="/images/logo.png">
@@ -15,7 +15,7 @@
             <ul class="menu">
                 <li><a href="#acceuil">Acceuil</a></li>
                 <li><a href="#notre-personnel">Notre personnel</a></li>
-                <li><a href="">Nos servises</a></li>
+                <li><a href="#nos-services">Nos servises</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="responsive-menu"></div>
@@ -29,7 +29,7 @@
                 <div id="image-acceuil">
                     <img src="images/imageacceuil.png" alt="acceuil image">
                 </div>
-                <p>Votre site de montage et de vente de sites de tous types a des prix imbattables sur le marche</p>
+                <p id="slogan">Votre site de montage et de vente de sites de tous types a des prix imbattables sur le marche</p>
             </section>
             <hr>
 
@@ -57,35 +57,47 @@
                 </figure>
             </section>
             <hr>
-            <!-- <section id="nos-services">
-
+            <section id="nos-services">
+                <header>Nos Services</header>
+                <div>
+                    <ul>
+                        <li>Creation et gestion des sites web</li>
+                        <li>Creation D'applications mobiles</li>
+                        <li>Formation en Informatique en ligne</li>
+                    </ul>
+                </div>
             </section>
-            <hr> -->
+            <hr>
+
             <header>Contactez nous</header>
             <section id="contact">
-                <form action="">
-                    <div class="left-right">
-                        <div class="left">
-                            <label for="">Nom complet</label>
-                            <input type="text">
-                            <label for="">Objet</label>
-                            <input type="text">
-                            <label for="">E-mail</label>
-                            <input type="text">
-                            <label for="">Message</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                <form action="" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Vos informations</legend>
+                        <div class="left-right">
+                            <div class="left">
+                            <label for="nomCom">Nom complet</label>
+                            <input type="text" id="nomCom" name="nomCom">
+                            <label for="objet">Objet</label>
+                            <input type="text" id="objet" name="objet" required>
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         </div>
                         <div class="right">
-                            <label for="">Numeros</label>
-                            <input type="text">
-                            <label for="">Date</label>
-                            <input type="text">
-                            <label for="">Autre details</label>
-                            <input type="text">
-                            <label for="">Adresse</label>
+                            <label for="numero">Numero</label>
+                            <input type="tel" id="numero" name="numero">
+                            <label for="activite">Secteur d'activite</label>
+                            <input type="text" id="activite" name="activite" required>
+                            <label for="details">Autre details</label>
+                            <input type="text" id="details" name="details">
+                            <label for="Adresse">Adresse</label>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.81300795801!2d10.042086868247985!3d5.445338222700688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105fb068c80e15d3%3A0x17579207aa0ffef4!2sUniversit%C3%A9%20De%20Dschang%20Facult%C3%A9%20De%20Science!5e0!3m2!1sfr!2scm!4v1704449337787!5m2!1sfr!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
                         </div>
-                     </div>
+                    </div>
+                    <input type="submit" value="submit" id="submitbtn">
+                </fieldset>
             </form>
             </section>
         </main>

@@ -35,11 +35,7 @@ nav{
     left: 0;
 }
 
-/* nav div img{
-    position: relative;
-} */
-
-nav ul {
+nav .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +46,7 @@ nav ul {
     font-size: 2vw;
 }
 
-nav ul li{
+nav .menu li{
     margin: 0 35px 0 35px;
 }
 
@@ -79,9 +75,14 @@ nav li a:hover {
     width: 100%;
 }
 
-#text-bienvenu,#acceuil p{
+#text-bienvenu{
     background-color: #DADADA;
     font-size: 1.5em;
+    text-align: center;
+}
+
+#slogan{
+    font-size: 50px;
     text-align: center;
 }
 
@@ -118,6 +119,21 @@ header{
     margin-bottom: 50px;
 }
 
+/* Nos services */
+#nos-services{
+    margin: 50px;
+}
+
+#nos-services header{
+    margin: 50px;
+}
+
+#nos-services  ul li{
+    font-size: 40px;
+    list-style-type: square;
+    margin-left: 30%;
+}
+
 /* formulaire */
 #contact{
     padding: 0 10%;
@@ -128,8 +144,6 @@ header{
 #contact form{
     background-color: #fff;
     margin: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
     padding: 20px;
 }
 
@@ -177,14 +191,27 @@ iframe{
     width: 100%;
     padding: 10px;
 }
+
+#submitbtn{
+    margin-left: 80%;
+    font-size: 30px;
+    width: 190px;
+    border-radius: 15px;
+}
+
+#submitbtn:hover{
+    background-color: #FFC8C9;
+    transition: 500ms;
+}
+
 /* Responsive */
 @media screen and (max-width:750px) {
     /* Menu responsive */
-    nav ul{
+    nav .menu{
         display: none;
     }
 
-    nav ul li{
+    nav .menu li{
         margin: 0;
         font-size: medium;
     }
@@ -255,6 +282,10 @@ iframe{
         font-size: 20px;
     }
 
+    #slogan{
+        font-size: 25px;
+    }
+
     /* notre personel */
     #notre-personnel{
         flex-direction: column;
@@ -267,7 +298,15 @@ iframe{
     #notre-personnel figcaption{
         font-size: large;
     }
-    
+
+    /* nos servises */
+    #nos-services  ul li{
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+
+    /* contact */
     #contact{
         margin: 0;
     }
@@ -284,5 +323,12 @@ iframe{
 
     textarea{
         width: 90%;
+    }
+
+    #submitbtn{
+        margin-left: 50%;
+        font-size: 15px;
+        width: 95px;
+        border-radius: 15px;
     }
 }
