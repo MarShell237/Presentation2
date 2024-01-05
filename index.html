@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css ">
-    <title>Portfolio-Mokolo Digital solution</title>
-
-    <!-- ajout du favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css ">
+        <link rel="stylesheet" href="normalize.css">
+        <title>Portfolio-Mokolo Digital solution</title>
+        <!-- ajout du favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    </head>
+    <body>
         <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="logo de la boite">
-            </div>
+            <img src="images/logo.png" alt="logo de la boite">
             <ul class="menu">
                 <li><a href="#acceuil">Acceuil</a></li>
                 <li><a href="#notre-personnel">Notre personnel</a></li>
-                <li><a href="#">Nos servises</a></li>
+                <li><a href="">Nos servises</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="responsive-menu"></div>
         </nav>
-    </header>
-    <main>
-        <section id="acceuil">
-            
-            <div id="image-acceuil">
-                <img src="images/imageacceuil.png" alt="acceuil image">
-            </div>
-            <div id="text-bienvenu">
-                <p id="mot-bienvenu">Bienvenu chez <b>Mokolo digital solution</b></p>
+        <main>
+            <hr>
+            <section id="acceuil">
+                <div id="text-bienvenu">
+                    <p id="mot-bienvenu">Bienvenu chez <b>Mokolo digital solution</b></p>
+                </div>
+                <div id="image-acceuil">
+                    <img src="images/imageacceuil.png" alt="acceuil image">
+                </div>
                 <p>Votre site de montage et de vente de sites de tous types a des prix imbattables sur le marche</p>
-            </div>
-        </section>
+            </section>
+            <hr>
 
-        <div class="espace"></div>
-        
-        <section id="notre-personnel">
-            <p id="personnel">Notre personnel</p>
-            <div id="images">   
-                <div>
-                    <img src="./images/mikekouam.jpg" alt="mikekouam">
-                    <span>Mike KOUAM</span>
-                    <span><br>(PDG)</span>
-                </div>
-                <div>
-                    <img src="./images/pouho.png" alt="pouho">
-                    <span>POUHO AMBEP Régis Rony</span>
-                    <span><br>(DG)</span>
-                </div>
-                <div>
-                    <img src="./images/tcheutcheu.png" alt="tcheutcheu">
-                    <span>THEUETCHEU NATHANAEL</span>
-                    <span><br>(charge des ressources humaines)<br></span>
-                </div>
-                <div>
-                    <img src="./images/alldraw.png" alt="alldraw">
-                    <span>ALLDRAW</span>
-                    <span><br>(HTML-CSS-JAVASCRIPT-PHP)</span>
-                </div>
-                <div>
-                    <img src="./images/yann.png" alt="yann">
-                    <span>YANN</span>
-                    <span><br>(Design)</span>
-                </div>
-            </div>
-        </section>
+            <header id="title-notre-personnel">Notre personnel</header>
+            <section id="notre-personnel">
+                <figure>
+                    <img src="images/mikekouam.jpg" alt="Mike Kouam (PDG)">
+                    <figcaption>MIKE KOUAM<br>(PDG)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pouho.png" alt="POUHO AMBEP Régis Rony (DG)">
+                    <figcaption>POUHO AMBEP Régis Rony<br>(DG)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/tcheutcheu.png" alt="THEUETCHEU NATHANAEL (charge des ressources humaines)">
+                    <figcaption>THEUETCHEU NATHANAEL<br>(charge des ressources humaines)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/alldraw.png" alt="all draw (HTML-CSS-JAVASCRIPT-PHP)">
+                    <figcaption>ALLDRAW<br>(HTML-CSS-JAVASCRIPT-PHP)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/yann.png" alt="yann">
+                    <figcaption>Yann <br>(Design)</figcaption>
+                </figure>
+            </section>
+            <hr>
+            <!-- <section id="nos-services">
 
-        <div class="espace"></div>
-        
-        <section id="nos-services">
-            
-        </section>
-        
-        <section id="contact">
-            <div id="rejoignez">
-                <p >Rejoignez-nous!!!</p>
-            </div>
-            <div id="section2">
-                <div>
-                    <img src="./images/carte.png" alt="">
-                </div>
-                <div class="formulaire">
-                    <p>Envoyer un message</p>
-                    <form action="get" method="">
-                        <input type="text" placeholder="nom">
-                        <input type="text" placeholder="email">
-                        <input type="text" placeholder="Objet">
-                        <textarea name="ecrire" id="ecrire" cols="20" rows="10"></textarea>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+            </section>
+            <hr> -->
+            <header>Contacter nous</header>
+            <section id="contact">
+                <form action="">
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="">Nom complet</label>
+                            <input type="text">
+                            <label for="">Objet</label>
+                            <input type="text">
+                            <label for="">E-mail</label>
+                            <input type="text">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="right">
+                            <label for="">Numeros</label>
+                            <input type="text">
+                            <label for="">Date</label>
+                            <input type="text">
+                            <label for="">Autre details</label>
+                            <input type="text">
+                            <label for="">Adresse</label>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.81300795801!2d10.042086868247985!3d5.445338222700688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105fb068c80e15d3%3A0x17579207aa0ffef4!2sUniversit%C3%A9%20De%20Dschang%20Facult%C3%A9%20De%20Science!5e0!3m2!1sfr!2scm!4v1704449337787!5m2!1sfr!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        </div>
+                     </div>
+            </form>
+            </section>
+        </main>
+
+
+
+
+        <!-- script du menu responsive -->
+        <script>
+            var toggle_menu = document.querySelector('.responsive-menu');
+            var menu = document.querySelector('.menu');
+            toggle_menu.onclick = function(){
+                toggle_menu.classList.toggle('active');
+                 menu.classList.toggle('responsive');
+            }
+        </script>
+    </body>
 </html>

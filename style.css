@@ -1,7 +1,8 @@
+/* general */
 *{
+    box-shadow:1px solid red;
     margin: 0;
     padding: 0;
-    /* all:unset */
 }
 
 html{
@@ -17,66 +18,69 @@ section{
     margin-top: 50px;
 }
 
-a{
-    text-decoration: none;
+header{
+    font-family: "Segoe UI", Arial, sans-serif;;
 }
 
-header nav{
-    background-color: #FAE4D5;
-    position: fixed;
+/* nav bar */
+nav{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;  
+    background-color: #333333;
+    z-index: 1000;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1000;
+}
+
+/* nav div img{
+    position: relative;
+} */
+
+nav ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: space-between; */
-    height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 2vw;
 }
 
-header nav .logo{
+nav ul li{
+    margin: 0 35px 0 35px;
+}
+
+nav img{
+    display: block;
+    height: 60px;
     width: 200px;
-    height: 80px;
-    margin-right: 150px;
 }
 
-nav  .logo img{
-    width: 100%;
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
     height: 100%;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
+nav li a:hover {
+    background-color: #111111;
 }
 
-.menu li{
-    margin: 0 50px;
-    list-style-type: none;
-}
-
-.menu li a{
-    color: #000;
-    font-size: 24px;
-}
-
-.menu li a:hover{
-    border-bottom: 3px red solid;
-}
-
-#image-acceuil{
-    width: 100%;
-}
+/* Acceuil */
 
 #image-acceuil img{
     width: 100%;
 }
 
-#text-bienvenu{
+#text-bienvenu,#acceuil p{
     background-color: #DADADA;
-}
-
-#text-bienvenu p{
     font-size: 1.5em;
     text-align: center;
 }
@@ -86,132 +90,199 @@ nav  .logo img{
     color: #006FBF;
 }
 
-#localisation{
-    background-color: #B3C6E6;
-}
-
-#contact{
-    background-color: #D8D8D8;
-}
-
-main #rejoignez{
-    width:200px;
-    height: 50px;
-    margin: 40px;
-    margin-left: 40%;
-}
-
-main p{
-    background-color: white;
+/* Notre personnel */
+header{
+    margin-top: 50px;
     text-align: center;
-    border-radius: 10px;
-    font-size: xx-large;
-    font-weight: 700;
+    font-size: 5vw;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-#personnel{
-    margin: 5px 0 30px 45%;
-    width: 100px;
-    background-color: #D8D8D8;
-}
-
-#section2{
+#notre-personnel{
     display: flex;
-    justify-content: center;
-}
-
-.formulaire{
-    background-color: #FAE4D5;
-    width: 100%;
-}
-
-.formulaire p{
-    width: 190px;
-    background-color: white;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 30%;
-    border-radius: 10px;
-    font-size: xx-large;
-    font-weight: 700;
-}
-
-.formulaire input{
-    width: 90%;
-    margin: 25px 15px 25px 15px;
-    border: white;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    font-size: large;
-}
-
-.formulaire textarea{
-    width: 90%;
-    margin: 25px 15px 0px 15px;
-    border: white;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#images{
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    margin-left: 10%;
+}
+
+#notre-personnel img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#notre-personnel figcaption{
+    font-size: 1.5vw;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-#images img{
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 30px;
+/* formulaire */
+#contact{
+    padding: 0 10%;
+    margin: 50px;
+    height: 100vh;
 }
 
-.espace{
-    height: 400px;
+#contact form{
+    background-color: #fff;
+    margin: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 20px;
 }
 
-/* responsive */
-@media screen and (max-width:600px){
+.left-right{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-right .left, .left-right .right{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    padding: 10px;
+}
+
+#contact form label{
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#contact form input{
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 95%;
+    padding: 10px;
+}
+
+#contact form input:focus ,textarea:focus{
+    border: 1px solid #FFC8C9;
+}
+
+iframe{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+}
+/* Responsive */
+@media screen and (max-width:750px) {
+    /* Menu responsive */
+    nav ul{
+        display: none;
+    }
+
+    nav ul li{
+        margin: 0;
+        font-size: medium;
+    }
+
     nav{
         display: flex;
-        justify-content:center;
-        height: 45px;
-        background-color: #FAE4D5;
+        justify-content: space-between;
+        background-color: #333;
     }
-
-    nav div{
-        border-left: black 1px solid;
-        border-right: black 1px solid;
-    }
-    
-    nav li a{
-        display: none;
-        font-size: 0.5rem;
-    }
-        
-    nav div img{
-        width: 0.7em;
-        height: 0.7em;
-    }
-    
-    nav #logo{
+ 
+    nav img{
         width: 100px;
-        height: 100%;
-    }
-    
-    nav  #logo img{
-        width: 100%;
-        height: 100%;
+    }    
+
+
+    .responsive-menu{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
     }
 
-    #section2{
+    .responsive-menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #fff;
+        width: 28px;
+        box-shadow: 0 10px 0 #fff;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::after{
+        box-shadow: 0 0 0 #fff;
+        transform: rotate(45deg);
+    }
+
+    .responsive-menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #fff;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::before{
+        transform: rotate(-45deg);
+    }
+
+    nav .menu.responsive{
         display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #222;
+        align-items: unset;
+    }
+
+    /* acceuil */
+    #text-bienvenu{
+        font-size: 20px;
+    }
+
+    /* notre personel */
+    #notre-personnel{
         flex-direction: column;
     }
 
-    #section2 div img{
+    #notre-personnel img{
+        margin-left: 20px;
+    }
+
+    #notre-personnel figcaption{
+        font-size: large;
+    }
+    
+    #contact{
+        margin: 0;
+    }
+
+    .left-right{
+        flex-direction: column;
+    }
+
+    .left-right .left, .left-right .right{
+        flex-direction: column;
         width: 100%;
+        padding: 10px;
+    }
+
+    textarea{
+        width: 90%;
     }
 }
